@@ -20,7 +20,6 @@ namespace ElevenNote.Data
             return userIdentity;
         }
     }
-
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
