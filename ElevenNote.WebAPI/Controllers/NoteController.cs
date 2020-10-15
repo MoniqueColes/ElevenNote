@@ -13,6 +13,12 @@ namespace ElevenNote.WebAPI.Controllers
     [Authorize]
     public class NoteController : ApiController
     {
+        public IHttpActionResult Get(int id)
+        {
+            NoteService noteService = CreateNoteService();
+            var note = noteService.GetNoteById(id);
+            return Ok(note);
+        }
         public IHttpActionResult Get()
         {
             NoteService noteService = CreateNoteService();
