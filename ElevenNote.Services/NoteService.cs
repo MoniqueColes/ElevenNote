@@ -48,6 +48,7 @@ namespace ElevenNote.Services
             _userId = userId;
         }
 
+        //create
         public bool CreateNote(NoteCreate model)
         {
             var entity =
@@ -105,8 +106,5 @@ namespace ElevenNote.Services
                     };
             }
         }
-
     }
-
-
 }
